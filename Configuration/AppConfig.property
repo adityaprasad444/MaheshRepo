@@ -1,0 +1,9 @@
+ExcelPath=.\\InputData\\TestData.xlsx
+Excel2Path=.\\InputData\\NewTestData.xlsx
+ChromeDriver=.\\Drivers\\chromedriver.exe
+IEDriver=.\\Drivers\\IEDriverServer.exe
+URL=https://www.facebook.com/
+UsernamePath=.//*[@id='email']
+PasswordPath=.//*[@id='pass']
+SignInPath=.//*[@id='u_0_3']
+MercurySignUpUrl=http://newtours.demoaut.com/mercuryregister.php

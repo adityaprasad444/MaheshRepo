@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="Listeners.ListenersExample"/>
+  </listeners>
+  <test name="IETest(failed)" parallel="tests">
+    <parameter name="browser" value="IE"/>
+    <classes>
+      <class name="Testcases.SanityTestingUsingExcel">
+        <methods>
+          <include name="loginWithExcel" invocation-numbers="0"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Testcases.SanityTestingUsingExcel -->
+    </classes>
+  </test> <!-- IETest(failed) -->
+  <test name="ChromeTest(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="Testcases.SanityTestingUsingExcel">
+        <methods>
+          <include name="loginWithExcel" invocation-numbers="0"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Testcases.SanityTestingUsingExcel -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test name="FirefoxTest(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="Testcases.SanityTestingUsingExcel">
+        <methods>
+          <include name="loginWithExcel" invocation-numbers="0"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Testcases.SanityTestingUsingExcel -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

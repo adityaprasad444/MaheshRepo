@@ -1,0 +1,40 @@
+@SanityScenarioOfMercuryToursPage
+Feature: Sanity scenarios of MercuryTours
+
+  #MercuryTours SignUp using iterations
+  @SignUpusingIterations
+  Scenario Outline: Testing the mercurytours signup page using iterations [90m# MercuryTours.feature:6[0m
+    [36mGiven [0m[36mI open "Chrome" and provided url for signup[0m
+    [36mAnd [0m[36mI provided details for signUp in "<iteration>"[0m
+    [36mWhen [0m[36mI clicked on SignIn Button[0m
+    [36mThen [0m[36mUseraccount should be created successfully[0m
+    [36mAnd [0m[36mI captured screenshot with screenname as "<iteration>"[0m
+    [36mAnd [0m[36mI closed the browser[0m
+
+    Examples: 
+
+  @SignUpusingIterations @SanityScenarioOfMercuryToursPage
+  Scenario Outline: Testing the mercurytours signup page using iterations [90m# MercuryTours.feature:16[0m
+    [32mGiven [0m[32mI open "[0m[32m[1mChrome[0m[32m" and provided url for signup[0m                     [90m# MercuryToursSanitySteps.i_open_and_provided_url_for_signup(String)[0m
+    [32mAnd [0m[32mI provided details for signUp in "[0m[32m[1m1[0m[32m"[0m                              [90m# MercuryToursSanitySteps.i_provided_details_for_signUp_in(int)[0m
+    [32mWhen [0m[32mI clicked on SignIn Button[0m                                       [90m# MercuryToursSanitySteps.i_clicked_on_SignIn_Button()[0m
+    [32mThen [0m[32mUseraccount should be created successfully[0m                       [90m# MercuryToursSanitySteps.useraccount_should_be_created_successfully()[0m
+    [32mAnd [0m[32mI captured screenshot with screenname as "[0m[32m[1m1[0m[32m"[0m                      [90m# MercuryToursSanitySteps.i_captured_screenshot_with_screenname_as(String)[0m
+    [31mAnd [0m[31mI closed the browser[0m                                              [90m# FacebookSanitySteps.i_closed_the_browser()[0m
+      [31mjava.lang.NullPointerException
+      	at Steps.FacebookSanitySteps.i_closed_the_browser(FacebookSanitySteps.java:91)
+      	at ✽.And I closed the browser(MercuryTours.feature:12)
+      [0m
+
+  @SignUpusingIterations @SanityScenarioOfMercuryToursPage
+  Scenario Outline: Testing the mercurytours signup page using iterations [90m# MercuryTours.feature:17[0m
+    [32mGiven [0m[32mI open "[0m[32m[1mChrome[0m[32m" and provided url for signup[0m                     [90m# MercuryToursSanitySteps.i_open_and_provided_url_for_signup(String)[0m
+    [32mAnd [0m[32mI provided details for signUp in "[0m[32m[1m2[0m[32m"[0m                              [90m# MercuryToursSanitySteps.i_provided_details_for_signUp_in(int)[0m
+    [32mWhen [0m[32mI clicked on SignIn Button[0m                                       [90m# MercuryToursSanitySteps.i_clicked_on_SignIn_Button()[0m
+    [32mThen [0m[32mUseraccount should be created successfully[0m                       [90m# MercuryToursSanitySteps.useraccount_should_be_created_successfully()[0m
+    [32mAnd [0m[32mI captured screenshot with screenname as "[0m[32m[1m2[0m[32m"[0m                      [90m# MercuryToursSanitySteps.i_captured_screenshot_with_screenname_as(String)[0m
+    [31mAnd [0m[31mI closed the browser[0m                                              [90m# FacebookSanitySteps.i_closed_the_browser()[0m
+      [31mjava.lang.NullPointerException
+      	at Steps.FacebookSanitySteps.i_closed_the_browser(FacebookSanitySteps.java:91)
+      	at ✽.And I closed the browser(MercuryTours.feature:12)
+      [0m

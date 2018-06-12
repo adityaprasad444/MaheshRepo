@@ -1,0 +1,29 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 14.385 sec <<< FAILURE! - in TestSuite
+loginWithExcel(Testcases.SanityTestingUsingExcel)  Time elapsed: 0.18 sec  <<< FAILURE!
+java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases
+	at Testcases.SanityTestingUsingExcel.loginWithExcel(SanityTestingUsingExcel.java:28)
+
+tearDown(Testcases.SanityTestingUsingExcel)  Time elapsed: 0.182 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at Testcases.SanityTestingUsingExcel.tearDown(SanityTestingUsingExcel.java:42)
+
+loginWithExcel(Testcases.SanityTestingUsingExcel)  Time elapsed: 1.538 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Unexpected error launching Internet Explorer. Protected Mode settings are not the same for all zones. Enable Protected Mode must be set to the same value (enabled or disabled) for all zones.
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+System info: host: 'DESKTOP-PR07NF6', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
+Driver info: driver.version: InternetExplorerDriver
+remote stacktrace: 
+	at Testcases.SanityTestingUsingExcel.loginWithExcel(SanityTestingUsingExcel.java:28)
+
+tearDown(Testcases.SanityTestingUsingExcel)  Time elapsed: 1.538 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at Testcases.SanityTestingUsingExcel.tearDown(SanityTestingUsingExcel.java:42)
+
+loginWithExcel(Testcases.SanityTestingUsingExcel)  Time elapsed: 9.93 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at Testcases.SanityTestingUsingExcel.loginWithExcel(SanityTestingUsingExcel.java:32)
+
