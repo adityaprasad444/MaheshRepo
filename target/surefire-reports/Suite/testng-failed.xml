@@ -3,6 +3,7 @@
 <suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]" parallel="tests">
   <listeners>
     <listener class-name="Listeners.ListenersExample"/>
+    <listener class-name="Listeners.AnnotationTransformer"/>
   </listeners>
   <test name="FirefoxTest(failed)" parallel="tests">
     <parameter name="browser" value="firefox"/>
@@ -31,7 +32,7 @@
     <classes>
       <class name="Testcases.SanityTestingUsingExcel">
         <methods>
-          <include name="loginWithExcel" invocation-numbers="0"/>
+          <include name="loginWithExcel" invocation-numbers="0 0"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- Testcases.SanityTestingUsingExcel -->
